@@ -1,0 +1,269 @@
+body{
+    background:
+    linear-gradient(
+        135deg,
+        #f8fafc,
+        #eef2f7
+    );
+    font-family:'Poppins', sans-serif;
+}
+
+h1,h2{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+#conocerMas{
+    scroll-margin-top: 100px;
+}
+
+section{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    margin-top:20px;
+}
+
+section h2{
+    text-align: center;
+    color: #111827;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+section h2::after{
+    content: "";
+    width: 80px;
+    height: 4px;
+    background: #D4A017;
+    display: block;
+    margin: 10px auto 0;
+    border-radius: 10px;
+}
+
+footer{
+    background:#111827;
+    margin-top:80px;
+    padding:25px;
+    text-align:center;
+    border-top:2px solid #D4A017;
+}
+
+footer p{
+
+    color:#F9FAFB;
+
+    margin:0;
+}
+
+.card{
+    margin-bottom:20px;
+}
+ 
+.card-body{
+    text-align:center;
+}
+
+.logo-navbar{
+    width:48px;
+    height:48px;
+    object-fit:contain;
+    margin-right:12px;
+}
+
+.navbar-brand{
+    color:#D4A017 !important;
+    font-weight:700;
+    font-size:1.5rem;
+    display:flex;
+    align-items:center;
+}
+
+.navbar-premium{
+    background:#111827;
+    border-bottom:2px solid #D4A017;
+    box-shadow:0 5px 20px rgba(0,0,0,.2);
+}
+
+.nav-link{
+    color:#F9FAFB !important;
+    font-weight:500;
+    margin-left:15px;
+    transition:.3s;
+}
+
+.nav-link:hover{
+    color:#D4A017 !important;
+}
+
+.nav-link.active{
+    color:#D4A017 !important;
+    font-weight:700;
+}
+
+
+.hero{
+    min-height: 80vh;
+    background-image:
+    linear-gradient(
+        rgba(17,24,39,0.80),
+        rgba(17,24,39,0.80)
+    ),
+    url("assets/imgs/background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.hero-overlay{
+    width:100%;
+    padding:40px 20px;
+}
+
+.hero h1{
+    color:#D4A017;
+    font-size:4rem;
+    font-weight:700;
+    margin-bottom:20px;
+}
+
+.hero p{
+    color:#F9FAFB;
+    max-width:700px;
+    margin:auto;
+    font-size:1.2rem;
+    line-height:1.8;
+}
+
+.form-control{
+    border:1px solid #d1d5db;
+    border-radius:12px;
+    padding:12px;
+}
+
+.form-control:focus{
+    border-color:#D4A017;
+    box-shadow:0 0 0 4px rgba(212,160,23,.15);
+}
+
+.btn-premium{
+    display:inline-block;
+    margin-top:30px;
+    background:#D4A017;
+    color:white;
+    padding:14px 30px;
+    border-radius:12px;
+    text-decoration:none;
+    font-weight:600;
+    transition:.3s;
+}
+
+.btn-premium:hover{
+    transform:translateY(-3px);
+}
+
+.premium-card{
+    border:none;
+    border-radius:16px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,.1);
+    transition:.3s;
+}
+
+.premium-card:hover{
+    transform:translateY(-5px);
+}
+
+.premium-card h5{
+    color:#111827;
+    font-weight:700;
+}
+
+.premium-card p{
+    color:#6b7280;
+}
+
+.dashboard-card{
+    background: #FFFFFF;
+    border-radius: 20px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,.08);
+    transition: .3s;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.dashboard-card:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0,0,0,.15);
+}
+
+.dashboard-card h3{
+    color: #111827;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.dashboard-card p{
+    color: #6B7280;
+    margin-bottom: 20px;
+    max-width: 250px;
+    margin: 15px auto;
+}
+
+.stat-card{
+    background: linear-gradient(
+        135deg,
+        #111827,
+        #1F2937
+    );
+    color: white;
+    border-left: 4px solid #D4A017;
+    border-radius: 20px;
+    padding: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    transition: .3s;
+}
+
+.stat-card:hover{
+    transform: scale(1.03);
+}
+
+.stat-card h3{
+    color: #D4A017;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.stat-card p{
+    color: #F9FAFB;
+    margin: 0;
+}
+
+.btn-eliminar{
+    background-color: transparent;
+    color: #dc3545;
+    border: 2px solid #dc3545;
+    border-radius: 10px;
+    padding: 8px 15px;
+    margin-top: 10px;
+    transition: .3s;
+}
+
+.btn-eliminar:hover{
+    background-color: #dc3545;
+    color: white;
+}
