@@ -1,0 +1,142 @@
+:root {
+    --primario: #2c3e50;
+    --secundario: #e74c3c;
+    --fondo: #f8f9fa;
+    --texto: #333333;
+    --acento: #3498db;
+    --transicion: 0.4s ease; /* Transicion */
+}
+
+/* Tipografias e Interlineado */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6; 
+    background-color: var(--fondo);
+    color: var(--texto);
+    padding-top: 80px; 
+}
+
+h1 { font-size: 2.5rem; margin-bottom: 1.5rem; } 
+h2 { font-size: 2rem; color: var(--primario); }   
+p { font-size: 1rem; margin-bottom: 1rem; }       
+
+/* Navbar fija como se pide en rubrica */
+.navbar {
+    background-color: var(--primario) !important;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.nav-link {
+    color: white !important;
+    transition: color var(--transicion); 
+}
+
+.nav-link:hover {
+    color: var(--acento) !important;
+}
+
+.nav-link.active {
+    font-weight: bold;
+    border-bottom: 2px solid var(--secundario);
+}
+
+.hero-section {
+    padding: 60px 0;
+    background: white;
+    border-radius: 15px;
+    margin-bottom: 30px;
+}
+
+.img-gallery {
+    border-radius: 8px;
+    transition: transform var(--transicion);
+    object-fit: cover;
+    height: 250px;
+    width: 100%;
+}
+
+.img-gallery:hover {
+    transform: scale(1.05);
+}
+
+.footer-custom {
+    background: var(--primario);
+    color: white;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+/* Estos estilos son para el form de contacto.html */
+.form-control:focus {
+    border-color: var(--acento);
+    box-shadow: 0 0 0 0.2rem rgba(52, 152, 219, 0.25);
+}
+
+.btn-enviar {
+    background-color: var(--secundario);
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    transition: background var(--transicion);
+}
+
+.btn-enviar:hover {
+    background-color: #c0392b;
+}
+
+#modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.modal-oculto {
+    display: none !important;
+}
+
+.contenido-modal {
+
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+    position: relative;
+}
+
+#cerrarModal {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 30px;
+    cursor: pointer;
+    color: red;
+}
+
+.fecha-box {
+    background-color: white;
+    border-left: 5px solid var(--secundario);
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 350px;
+    margin: 0 auto;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+
+}
+
+.fecha-texto {
+    color: var(--primario);
+    font-size: 1.1rem;
+    text-transform: capitalize;
+    margin: 0;
+}
+
+/* Bootstrap te soluciona la vida jaja */
