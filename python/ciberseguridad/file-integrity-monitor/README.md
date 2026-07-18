@@ -1,7 +1,3 @@
-<p align="center">
-  <img src="assets/banner.png" alt="CyberToolkit Banner" width="100%">
-</p>
-
 <h1 align="center">🛡️ File Integrity Monitor</h1>
 
 <p align="center">
